@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanchit Virdi | Software Engineer — Full-Stack, AI/ML & Systems</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Sanchit Virdi — Software Engineer specializing in full-stack web platforms, machine learning, AI systems, and high-concurrency distributed architectures. NIT '27, Ex-Research Intern @ IIT Jammu.">
+  <meta name="keywords" content="Sanchit Virdi, Software Engineer, Full Stack Developer, AI ML Engineer, Machine Learning, React 19, Node.js, Python, TensorFlow, Distributed Systems, NIT, IIT Jammu">
+  <meta name="author" content="Sanchit Virdi">
+  <link rel="canonical" href="https://github.com/sanchit037nit">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sanchit Virdi | Software Engineer — Full-Stack, AI/ML & Systems">
+  <meta property="og:description" content="Building scalable full-stack web applications, predictive machine learning models, and resilient distributed architectures.">
+  <meta property="og:image" content="assets/hero-analytics.jpg">
+  <meta property="og:url" content="https://github.com/sanchit037nit">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sanchit Virdi | Software Engineer — Full-Stack, AI/ML & Systems">
+  <meta name="twitter:description" content="Building scalable full-stack web applications, predictive machine learning models, and resilient distributed architectures.">
+  <meta name="twitter:image" content="assets/hero-analytics.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Sanchit Virdi Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Sanchit</span>
+        <span class="logo-accent">.Virdi</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Status Indicator -->
+      <div class="status-pill" title="Graduating B.Tech in 2027 • Open to Software Engineering, Full-Stack & AI Roles">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Available 2027 Roles</span>
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#realtime-lab" class="nav-item">Systems & AI Lab</a>
+        <a href="#architecture" class="nav-item">Architecture</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#milestones" class="nav-item">Experience</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <!-- Nav Action Controls -->
+      <div class="nav-actions">
+        <!-- Terminal Trigger Button -->
+        <button id="cmd-palette-btn" class="icon-btn" title="Open Interactive CLI (Ctrl + K)" aria-label="Open Command Console">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span class="kbd-hint">⌘K</span>
+        </button>
+
+        <!-- Sound FX Toggle -->
+        <button id="sound-toggle-btn" class="icon-btn" title="Toggle UI Sound Effects" aria-label="Toggle Sound">
+          <svg id="sound-icon-on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+          <svg id="sound-icon-off" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <svg id="theme-icon-sun" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Modal Trigger -->
+        <button id="quick-resume-btn" class="btn btn-sm btn-outline">Resume</button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-toggle" class="mobile-toggle icon-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <a href="#projects" class="mobile-item">Projects</a>
+      <a href="#realtime-lab" class="mobile-item">Systems & AI Lab</a>
+      <a href="#architecture" class="mobile-item">Architecture</a>
+      <a href="#skills" class="mobile-item">Skills</a>
+      <a href="#milestones" class="mobile-item">Experience</a>
+      <a href="#contact" class="mobile-item">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Sub-badge -->
+          <div class="hero-badge">
+            <span class="badge-icon">⚡</span>
+            <span>Software Engineer • Full-Stack, AI/ML & Systems</span>
+            <span class="badge-separator">•</span>
+            <span class="badge-sub">NIT '27 • Ex-Research Intern @ IIT Jammu</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">intelligent systems</span>, scalable <span class="gradient-text-alt">full-stack apps</span>, and predictive AI.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong class="highlight-name">Sanchit Virdi</strong> — a Software Engineer focused on end-to-end full-stack platforms, machine learning algorithms, and high-concurrency systems. From collaborative developer ecosystems and high-throughput booking architectures to quantitative LSTM forecasting models, I engineer solutions that are robust, scalable, and intelligent.
+          </p>
+
+          <!-- Core Call to Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              Featured Projects
+            </a>
+            <a href="#realtime-lab" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Interactive Systems & AI Lab
+            </a>
+            <a href="https://github.com/sanchit037nit" target="_blank" rel="noopener noreferrer" class="btn btn-icon-link" title="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub (12+ Repos)</span>
+            </a>
+          </div>
+
+          <!-- Micro Metric Highlights -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-val">Full-Stack</span>
+              <span class="metric-lbl">React 19, Node & DBs</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">12+</span>
+              <span class="metric-lbl">Repositories & Systems</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">94.9%</span>
+              <span class="metric-lbl">ML Model ROC-AUC (UPI)</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">IIT Jammu</span>
+              <span class="metric-lbl">AI/ML Research Intern</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Live Glassmorphic Showcase -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/hero-analytics.jpg" alt="High-Performance Market Analytics & Reactive UI Visual" class="hero-main-img" loading="eager">
+            <div class="hero-overlay-card top-right-card">
+              <div class="card-chip">
+                <span class="chip-dot"></span>
+                <span>WebSocket Stream</span>
+              </div>
+              <div class="card-number" id="stream-rate-counter">60 updates/sec</div>
+              <div class="card-caption">Zero dropped frames • 120Hz smooth</div>
+            </div>
+            <div class="hero-overlay-card bottom-left-card">
+              <div class="card-chip chip-amber">
+                <span class="chip-dot dot-amber"></span>
+                <span>Sub-50ms SSR Extraction</span>
+              </div>
+              <div class="card-number">Groq LPU + In-Memory</div>
+              <div class="card-caption">Deterministic Failsafe Architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE SYSTEMS & AI LAB SECTION -->
+    <section id="realtime-lab" class="lab-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Interactive Engineering Demo</div>
+          <h2 class="section-title">Systems & AI Engineering Lab</h2>
+          <p class="section-subtitle">
+            Interact with my live machine learning inference model and high-throughput real-time streaming engine directly in your browser.
+          </p>
+
+          <!-- Lab Mode Switcher -->
+          <div class="lab-mode-tabs" role="tablist">
+            <button id="mode-btn-ml" class="lab-mode-btn active" data-mode="ml">
+              <span>🧠 Live ML Inference: UPI Fraud Predictor</span>
+            </button>
+            <button id="mode-btn-stream" class="lab-mode-btn" data-mode="stream">
+              <span>⚡ High-Throughput Stream: WebSocket Engine</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- MODE 1: Machine Learning Fraud Inference Simulator -->
+        <div id="lab-ml-view" class="lab-view active">
+          <div class="lab-grid ml-lab-grid">
+            <!-- ML Controls -->
+            <div class="glass-panel lab-panel-left">
+              <div class="panel-header">
+                <div class="panel-tag-title">
+                  <span class="pulse-dot"></span>
+                  <strong>Live Random Forest Model Inference</strong>
+                </div>
+                <span class="badge badge-success">94.9% ROC-AUC</span>
+              </div>
+
+              <div class="ml-controls-form">
+                <div class="ml-slider-group">
+                  <div class="slider-label-row">
+                    <label for="ml-amount">Transaction Amount (₹):</label>
+                    <span id="ml-amount-val" class="slider-display-val">₹ 14,500</span>
+                  </div>
+                  <input type="range" id="ml-amount" min="100" max="100000" step="500" value="14500" class="styled-range">
+                </div>
+
+                <div class="ml-slider-group">
+                  <div class="slider-label-row">
+                    <label for="ml-velocity">Hourly Velocity (Transactions in past 1 hr):</label>
+                    <span id="ml-velocity-val" class="slider-display-val">3 txns</span>
+                  </div>
+                  <input type="range" id="ml-velocity" min="1" max="25" step="1" value="3" class="styled-range">
+                </div>
+
+                <div class="ml-slider-group">
+                  <div class="slider-label-row">
+                    <label for="ml-trust">Device Trust Index:</label>
+                    <span id="ml-trust-val" class="slider-display-val">90%</span>
+                  </div>
+                  <input type="range" id="ml-trust" min="0" max="100" step="5" value="90" class="styled-range">
+                </div>
+
+                <div class="ml-slider-group">
+                  <div class="slider-label-row">
+                    <label for="ml-time">Transaction Time Window:</label>
+                  </div>
+                  <select id="ml-time" class="styled-select" style="width: 100%;">
+                    <option value="normal">Daytime Regular Hours (10:00 AM – 10:00 PM)</option>
+                    <option value="anomalous">High-Risk Anomaly Window (02:00 AM – 05:00 AM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Quick Presets -->
+              <div class="ml-presets-strip">
+                <span class="presets-label">Simulate Scenarios:</span>
+                <button class="preset-btn" data-scenario="normal">Normal Grocery</button>
+                <button class="preset-btn" data-scenario="burst">Rapid Micro-Spike</button>
+                <button class="preset-btn" data-scenario="fraud">Midnight Whale Fraud</button>
+              </div>
+            </div>
+
+            <!-- ML Inference Output & Feature Attribution -->
+            <div class="glass-panel lab-panel-right">
+              <div class="chart-header">
+                <div class="chart-title-wrap">
+                  <span class="live-indicator-dot"></span>
+                  <h3 class="chart-title">Real-Time Classification & Feature Attribution</h3>
+                </div>
+                <span id="ml-latency-badge" class="badge badge-primary">Inference: &lt; 0.8ms</span>
+              </div>
+
+              <div class="ml-decision-banner" id="ml-decision-banner">
+                <div class="decision-icon" id="ml-decision-icon">✅</div>
+                <div class="decision-body">
+                  <div class="decision-status" id="ml-decision-text">AUTHORIZED • LOW RISK</div>
+                  <div class="decision-sub" id="ml-decision-sub">Transaction matches baseline user behavior</div>
+                </div>
+                <div class="decision-score-box">
+                  <span class="score-label">Risk Probability</span>
+                  <span class="score-number" id="ml-risk-score">12.4%</span>
+                </div>
+              </div>
+
+              <!-- Feature Importance Bars -->
+              <div class="feature-weights-wrap">
+                <div class="feature-heading">Feature Attribution Breakdown:</div>
+                
+                <div class="feature-bar-item">
+                  <div class="fb-meta">
+                    <span>Transaction Value Magnitude</span>
+                    <span id="fw-amount-val">35%</span>
+                  </div>
+                  <div class="fb-track"><div id="fw-amount-bar" class="fb-fill cyan" style="width: 35%;"></div></div>
+                </div>
+
+                <div class="feature-bar-item">
+                  <div class="fb-meta">
+                    <span>Velocity Spike Multiplier</span>
+                    <span id="fw-velocity-val">25%</span>
+                  </div>
+                  <div class="fb-track"><div id="fw-velocity-bar" class="fb-fill amber" style="width: 25%;"></div></div>
+                </div>
+
+                <div class="feature-bar-item">
+                  <div class="fb-meta">
+                    <span>Device Trust & Security Signature</span>
+                    <span id="fw-trust-val">22%</span>
+                  </div>
+                  <div class="fb-track"><div id="fw-trust-bar" class="fb-fill green" style="width: 22%;"></div></div>
+                </div>
+
+                <div class="feature-bar-item">
+                  <div class="fb-meta">
+                    <span>Temporal Deviation (Hour)</span>
+                    <span id="fw-time-val">18%</span>
+                  </div>
+                  <div class="fb-track"><div id="fw-time-bar" class="fb-fill cyan" style="width: 18%;"></div></div>
+                </div>
+              </div>
+
+              <div class="telemetry-explanation" style="margin-top: 1rem;">
+                <div class="exp-icon">🧠</div>
+                <div class="exp-text">
+                  <strong>Behind the ML Pipeline:</strong> Built using scikit-learn Random Forest trained on 1M+ transactions with SMOTE class rebalancing, yielding 94.9% ROC-AUC. This interactive evaluator uses a fast serialized tree traversal running in sub-millisecond client time.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODE 2: High-Throughput Stream & Order Book View -->
+        <div id="lab-stream-view" class="lab-view hidden">
+          <div class="lab-grid">
+            <!-- Left Column: Order Book & Ticker -->
+            <div class="glass-panel lab-panel-left">
+              <div class="panel-header">
+                <div class="pair-selector-wrap">
+                  <label for="symbol-select" class="sr-only">Choose Symbol</label>
+                  <select id="symbol-select" class="styled-select">
+                    <option value="NIFTY">NIFTY 50 • ₹24,850.40</option>
+                    <option value="BTC">BTC / USDT • $67,420.00</option>
+                    <option value="ETH">ETH / USDT • $3,580.20</option>
+                    <option value="TECH">TECH500 • $18,920.80</option>
+                  </select>
+                </div>
+
+                <!-- Stream Speed Toggle -->
+                <div class="stream-controls">
+                  <span class="control-label">Feed Rate:</span>
+                  <button class="tick-speed-btn active" data-speed="100">100ms</button>
+                  <button class="tick-speed-btn" data-speed="50">50ms (Turbo)</button>
+                  <button class="tick-speed-btn" data-speed="500">500ms</button>
+                  <button id="stream-pause-btn" class="tick-speed-btn pause-btn" title="Pause/Resume Feed">⏸</button>
+                </div>
+              </div>
+
+              <!-- Price Highlight Header -->
+              <div class="live-price-strip">
+                <div class="price-major" id="live-price-display">₹24,850.40</div>
+                <div class="price-change-badge positive" id="live-change-display">+1.84% (▲ 448.20)</div>
+                <div class="feed-latency-badge" id="feed-latency">Latency: <strong>3.8ms</strong></div>
+              </div>
+
+              <!-- Live Order Book Simulation -->
+              <div class="order-book-wrap">
+                <div class="order-book-header">
+                  <span>Price</span>
+                  <span>Size</span>
+                  <span>Total</span>
+                </div>
+
+                <!-- Asks (Red) -->
+                <div class="order-book-asks" id="order-book-asks" aria-label="Asks Depth"></div>
+
+                <!-- Spread Divider -->
+                <div class="spread-indicator">
+                  <span class="spread-label">Spread:</span>
+                  <span id="live-spread" class="spread-val">0.05 (0.0002%)</span>
+                  <span class="ws-connected-pill">● Live WebSocket Stream</span>
+                </div>
+
+                <!-- Bids (Green) -->
+                <div class="order-book-bids" id="order-book-bids" aria-label="Bids Depth"></div>
+              </div>
+
+              <!-- High-Stress Benchmark Trigger -->
+              <div class="stress-test-bar">
+                <button id="stress-test-btn" class="btn btn-stress">
+                  <span class="bolt-icon">⚡</span>
+                  Simulate 50 Ticks/Sec Ingestion Surge
+                </button>
+                <div class="stress-meta" id="stress-meta-text">Stress test UI frame drop & render stability</div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Real-Time Chart & Performance Telemetry -->
+            <div class="glass-panel lab-panel-right">
+              <div class="chart-header">
+                <div class="chart-title-wrap">
+                  <span class="live-indicator-dot"></span>
+                  <h3 class="chart-title">Real-Time Canvas Render Buffer</h3>
+                </div>
+                <div class="chart-timeframes">
+                  <button class="tf-btn active" data-tf="1m">1m</button>
+                  <button class="tf-btn" data-tf="5m">5m</button>
+                  <button class="tf-btn" data-tf="15m">15m</button>
+                  <button class="tf-btn" data-tf="1h">1h</button>
+                </div>
+              </div>
+
+              <!-- Canvas Chart with crosshair tooltip -->
+              <div class="canvas-chart-container">
+                <canvas id="market-canvas" width="600" height="280"></canvas>
+                <div id="chart-crosshair" class="chart-crosshair hidden">
+                  <div class="crosshair-val" id="crosshair-val">₹24,850.40</div>
+                </div>
+              </div>
+
+              <!-- Performance Telemetry HUD -->
+              <div class="telemetry-hud">
+                <div class="telemetry-item">
+                  <span class="hud-label">FPS Target</span>
+                  <span class="hud-value green" id="hud-fps">60 FPS</span>
+                  <div class="hud-bar"><div class="hud-fill green" style="width: 100%;"></div></div>
+                </div>
+                <div class="telemetry-item">
+                  <span class="hud-label">Frame Render Time</span>
+                  <span class="hud-value cyan" id="hud-frame-time">3.4 ms</span>
+                  <div class="hud-bar"><div class="hud-fill cyan" style="width: 25%;"></div></div>
+                </div>
+                <div class="telemetry-item">
+                  <span class="hud-label">Ticks Ingested</span>
+                  <span class="hud-value amber" id="hud-ticks-count">1,482</span>
+                  <div class="hud-bar"><div class="hud-fill amber" style="width: 78%;"></div></div>
+                </div>
+                <div class="telemetry-item">
+                  <span class="hud-label">Dropped Frames</span>
+                  <span class="hud-value green" id="hud-dropped-frames">0</span>
+                  <div class="hud-bar"><div class="hud-fill green" style="width: 0%;"></div></div>
+                </div>
+              </div>
+
+              <div class="telemetry-explanation">
+                <div class="exp-icon">💡</div>
+                <div class="exp-text">
+                  <strong>High-Frequency UI Architecture:</strong> Double-buffered Canvas plotting and <code>requestAnimationFrame</code> coalescing keep the main thread fluid even during heavy data bursts.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Engineered For Production</h2>
+          <p class="section-subtitle">
+            A selection of production platforms, quantitative algorithms, and distributed systems built with clean code and high performance standards.
+          </p>
+
+          <!-- Filter Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-btn active" data-filter="all">All Projects (8)</button>
+            <button class="filter-btn" data-filter="fullstack">Full-Stack Web</button>
+            <button class="filter-btn" data-filter="aiml">AI & Machine Learning</button>
+            <button class="filter-btn" data-filter="systems">Distributed Systems & Backend</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: Codezy -->
+          <article class="project-card" data-category="fullstack systems">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-success">Live on Vercel</span>
+                <span class="badge badge-primary">Full-Stack Platform</span>
+              </div>
+              <div class="project-icon-box">💬</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Real-Time Developer Ecosystem</div>
+              <h3 class="project-title">Codezy — Collaborative Code Solution & Mentorship Platform</h3>
+              <p class="project-summary">
+                A full-stack developer platform featuring real-time collaborative rooms, in-browser Monaco code editing, automated contest tracking, semantic search, and AES-256 encrypted storage.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">WebSockets / Socket.io</span>
+                <span class="tech-pill">Monaco Editor</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Zustand</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">⚡</span>
+                  <span>Instant multi-user code room synchronization with Socket.io</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🛡️</span>
+                  <span>AES-256 client-to-database solution encryption & JWT authentication</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">📊</span>
+                  <span>Automated CP contest tracking and progress visualization</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="codezy">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://services-ten-ashy.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-btn link-demo" title="Live Website">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sanchit037nit/Codezy" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: ARO-LSTM Pairs Trading -->
+          <article class="project-card" data-category="aiml">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-accent">Quantitative Finance</span>
+                <span class="badge badge-primary">Deep Learning</span>
+              </div>
+              <div class="project-icon-box">📈</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Algorithmic Trading & Modeling</div>
+              <h3 class="project-title">ARO-LSTM Pairs Trading & Statistical Arbitrage Pipeline</h3>
+              <p class="project-summary">
+                A market-neutral quantitative strategy pipeline testing cointegration (Johansen/ADF), predicting spread mean-reversion with LSTM neural networks, and sizing hedge ratios for capital allocation.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">TensorFlow / Keras</span>
+                <span class="tech-pill">Johansen Cointegration</span>
+                <span class="tech-pill">ADF Stationarity</span>
+                <span class="tech-pill">Statsmodels</span>
+                <span class="tech-pill">NumPy / Pandas</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">📊</span>
+                  <span>Cointegration vector estimation & rolling spread mean-reversion check</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🧠</span>
+                  <span>LSTM sequence model for next-day trading signal deviation forecasting</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">⚖️</span>
+                  <span>Automated hedge-ratio portfolio allocation & RMSPE risk metrics</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="arolstm">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/-ARO-LSTM-Pairs-Trading" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: ScholarSync -->
+          <article class="project-card" data-category="fullstack aiml">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-success">&lt; 50ms Matcher</span>
+                <span class="badge badge-primary">Groq AI LPU</span>
+              </div>
+              <div class="project-icon-box">🎓</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">High-Performance Ingestion & Matcher</div>
+              <h3 class="project-title">ScholarSync — Multi-Source Extraction & Matching Engine</h3>
+              <p class="project-summary">
+                Sub-millisecond SSR payload deserialization, Groq AI extraction, deterministic eligibility computation under 50ms, and resilient circuit-breaker fallbacks across national portals.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">Groq LPU Inference</span>
+                <span class="tech-pill">Vanilla JS / CSS</span>
+                <span class="tech-pill">Token Deduplication</span>
+                <span class="tech-pill">GitHub Actions CI/CD</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">⚡</span>
+                  <span>3-tier extraction: Tier 1 Sub-millisecond SSR JSON Deserialization</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🛡️</span>
+                  <span>Promise.allSettled() circuit breaker ensures 100% zero downtime</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🔍</span>
+                  <span>Stemmed token deduplication with &ge; 75% Overlap Coefficient fusion</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="scholarsync">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/ScholarSync" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Flight Booking High-Concurrency Engine -->
+          <article class="project-card" data-category="systems fullstack">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-accent">System Design</span>
+                <span class="badge badge-primary">High Concurrency</span>
+              </div>
+              <div class="project-icon-box">🛫</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Scalable Backend & Concurrency</div>
+              <h3 class="project-title">High-Concurrency Distributed Flight Booking Engine</h3>
+              <p class="project-summary">
+                Engineered to handle race conditions, row-level locking for zero seat overselling, distributed Redis caching, message queue event workers, and token-bucket rate limiters.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">MySQL (ACID)</span>
+                <span class="tech-pill">Redis Cache</span>
+                <span class="tech-pill">Message Queues</span>
+                <span class="tech-pill">Distributed Locks</span>
+                <span class="tech-pill">Rate Limiting</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">🔒</span>
+                  <span>Row-level SELECT FOR UPDATE transactions eliminating race conditions</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🚀</span>
+                  <span>Redis sub-5ms search caching with stale-while-revalidate invalidation</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">📬</span>
+                  <span>Decoupled asynchronous worker queue for notification dispatches</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="flight">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/System-Design-High-Concurrency-Flight-Booking-System" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: UPI Real-Time Fraud Detection -->
+          <article class="project-card" data-category="aiml fullstack">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-success">94.9% ROC-AUC</span>
+                <span class="badge badge-accent">Payments Fintech</span>
+              </div>
+              <div class="project-icon-box">💳</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Fintech Machine Learning & UI</div>
+              <h3 class="project-title">UPI Fraud Detection & Real-Time Auditing Platform</h3>
+              <p class="project-summary">
+                End-to-end ML classification pipeline detecting fraudulent digital transactions in real-time, featuring feature-engineered behavioral metrics and an interactive web auditing dashboard.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Random Forest</span>
+                <span class="tech-pill">Streamlit UI</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">ROC-AUC 94.9%</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">🎯</span>
+                  <span>94.9% ROC-AUC and ~0.95 F1-Score on highly imbalanced payment data</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">⏱️</span>
+                  <span>Sub-millisecond single transaction inference for inline payment authorization</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">🖥️</span>
+                  <span>Interactive web dashboard supporting instant CSV batch auditing</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="upi">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/UPI-Fraud-Detection-Using-Machine-Learning" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: RandomPass -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-success">Live on Vercel</span>
+                <span class="badge badge-primary">Web Crypto API</span>
+              </div>
+              <div class="project-icon-box">🔐</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Cryptographic Utility UI</div>
+              <h3 class="project-title">RandomPass — Client-Side Entropy Generator</h3>
+              <p class="project-summary">
+                A high-speed password generation application leveraging browser Web Crypto APIs for true client-side entropy calculation, clipboard shortcuts, and zero server storage.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript ES6+</span>
+                <span class="tech-pill">Web Crypto API</span>
+                <span class="tech-pill">Responsive CSS</span>
+                <span class="tech-pill">Vercel Edge</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">🔒</span>
+                  <span>Pure client-side cryptographic random byte generation (window.crypto)</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">⚡</span>
+                  <span>Zero-delay UI with instant copy and reactive length/rule sliders</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="ranpass">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://ranpass.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn link-demo" title="Live Site">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/sanchit037nit/random-pass" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7: GenAI Project -->
+          <article class="project-card" data-category="fullstack aiml">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-accent">Generative AI</span>
+                <span class="badge badge-primary">React 19 / Vite</span>
+              </div>
+              <div class="project-icon-box">✨</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">GenAI Web Application</div>
+              <h3 class="project-title">GenAI Studio — Intelligent Prompt & Creative Platform</h3>
+              <p class="project-summary">
+                A full-stack GenAI web platform combining modern React, state management with Zustand, and multi-model LLM inference pipelines with streaming responses and micro-animations.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Vite</span>
+                <span class="tech-pill">Zustand</span>
+                <span class="tech-pill">Framer Motion</span>
+                <span class="tech-pill">Tailwind CSS</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">🤖</span>
+                  <span>Streaming token generation interface with zero main-thread blocking</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">⚡</span>
+                  <span>Zustand store decoupling UI inputs from async generation queues</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="genai">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/GenAI-Project" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 8: Movie Recommendation Engine -->
+          <article class="project-card" data-category="aiml">
+            <div class="project-card-banner">
+              <div class="project-status-badges">
+                <span class="badge badge-success">ML Filtering</span>
+                <span class="badge badge-accent">Scikit-learn</span>
+              </div>
+              <div class="project-icon-box">🎬</div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-category-tag">Machine Learning & Discovery</div>
+              <h3 class="project-title">Content-Based Movie Recommendation Engine</h3>
+              <p class="project-summary">
+                Machine learning recommender system leveraging feature extraction, TF-IDF vectorization, and cosine similarity distance metrics to compute personalized similarity scores across 5,000+ titles.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">Cosine Similarity</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Jupyter</span>
+              </div>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hi-icon">📐</span>
+                  <span>Vector space modeling over high-dimensional metadata matrices</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hi-icon">⚡</span>
+                  <span>Sub-10ms nearest-neighbor similarity lookup using vectorized linear algebra</span>
+                </div>
+              </div>
+
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline open-arch-modal" data-project="movierec">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  Architecture Deep Dive
+                </button>
+                <div class="project-links">
+                  <a href="https://github.com/sanchit037nit/Movie-Recommend" target="_blank" rel="noopener noreferrer" class="link-btn link-github" title="Source Code">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & ENGINEERING PHILOSOPHY -->
+    <section id="architecture" class="arch-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Engineering Standards</div>
+          <h2 class="section-title">How I Architect Software</h2>
+          <p class="section-subtitle">
+            Core philosophies for building systems that survive real-world scale, volatile network spikes, and complex data models.
+          </p>
+        </div>
+
+        <div class="arch-tabs-container">
+          <div class="arch-tab-nav" role="tablist">
+            <button class="arch-tab-btn active" data-tab="tab-aiml">
+              <span class="tab-num">01</span>
+              <span>Machine Learning & Fast Inference Pipelines</span>
+            </button>
+            <button class="arch-tab-btn" data-tab="tab-concurrency">
+              <span class="tab-num">02</span>
+              <span>High-Concurrency Systems & ACID Transactions</span>
+            </button>
+            <button class="arch-tab-btn" data-tab="tab-websockets">
+              <span class="tab-num">03</span>
+              <span>Full-Stack Real-Time & Event-Driven Systems</span>
+            </button>
+            <button class="arch-tab-btn" data-tab="tab-frontend">
+              <span class="tab-num">04</span>
+              <span>Sub-16ms Reactive Frontend & State Architecture</span>
+            </button>
+          </div>
+
+          <div class="arch-tab-content">
+            <!-- TAB 1: Machine Learning Pipelines -->
+            <div class="arch-pane active" id="tab-aiml">
+              <div class="pane-grid">
+                <div class="pane-text">
+                  <h3>Production ML: From Mathematical Rigor to Inline Serving</h3>
+                  <p>
+                    Whether predicting mean-reverting financial spreads or intercepting fraudulent transactions, machine learning must deliver statistical reliability without becoming a high-latency bottleneck.
+                  </p>
+                  <ul class="principles-list">
+                    <li><strong>Vectorized Feature Pipelines:</strong> Compute behavioral velocity, device trust indices, and temporal anomalies in vectorized memory before model evaluation.</li>
+                    <li><strong>Imbalanced Data Handling:</strong> Counter extreme class skews (e.g. 0.1% fraud incidence) using SMOTE oversampling and calibrated decision thresholds to maximize ROC-AUC.</li>
+                    <li><strong>Sub-Millisecond Inference:</strong> Serialize trained estimators (Random Forest, ONNX, TF-IDF vectors) for inline authorization queries under 1ms.</li>
+                  </ul>
+                </div>
+                <div class="code-preview-box">
+                  <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">inference-pipeline.py</span>
+                  </div>
+                  <pre><code><span class="token-comment"># Sub-millisecond vectorized inference with feature attribution</span>
+<span class="token-keyword">def</span> <span class="token-function">evaluate_transaction_risk</span>(txn: TransactionPayload) -> FraudDecision:
+    <span class="token-comment"># Extract behavioral velocity & temporal deviation</span>
+    features = np.array([[
+        txn.amount,
+        txn.hourly_velocity,
+        txn.device_trust_score,
+        1 <span class="token-keyword">if</span> 2 <= txn.timestamp.hour <= 5 <span class="token-keyword">else</span> 0
+    ]])
+    <span class="token-comment"># Sub-millisecond decision with tuned ROC-AUC threshold</span>
+    risk_prob = rf_model.predict_proba(features)[0][1]
+    <span class="token-keyword">return</span> FraudDecision(
+        risk_score=float(risk_prob),
+        action=<span class="token-string">"FLAG"</span> <span class="token-keyword">if</span> risk_prob > 0.60 <span class="token-keyword">else</span> <span class="token-string">"AUTHORIZE"</span>
+    )</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: Concurrency & Integrity -->
+            <div class="arch-pane" id="tab-concurrency">
+              <div class="pane-grid">
+                <div class="pane-text">
+                  <h3>Guaranteed ACID Transactions & Distributed Locks</h3>
+                  <p>
+                    In financial ledgers, flight bookings, or order execution, double-spending and overselling are catastrophic. High throughput must not compromise data correctness.
+                  </p>
+                  <ul class="principles-list">
+                    <li><strong>Pessimistic Row-Level Locking:</strong> Using <code>SELECT ... FOR UPDATE</code> in relational databases (MySQL/PostgreSQL) inside explicit transactional boundaries.</li>
+                    <li><strong>Distributed In-Memory Locks (Redis Redlock):</strong> Enforcing mutex locks across horizontal server instances for shared critical resources.</li>
+                    <li><strong>Idempotency Keys & Decoupled Workers:</strong> Protecting API endpoints against duplicate client retries while message queues handle async notifications.</li>
+                  </ul>
+                </div>
+                <div class="code-preview-box">
+                  <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">booking-transaction.ts</span>
+                  </div>
+                  <pre><code><span class="token-keyword">await</span> connection.<span class="token-function">beginTransaction</span>();
+<span class="token-comment">// Row-level exclusive lock prevents race conditions</span>
+<span class="token-keyword">const</span> [seat] = <span class="token-keyword">await</span> connection.<span class="token-function">query</span>(
+  <span class="token-string">'SELECT id, status FROM seats WHERE id = ? FOR UPDATE'</span>,
+  [seatId]
+);
+<span class="token-keyword">if</span> (seat.status !== <span class="token-string">'AVAILABLE'</span>) {
+  <span class="token-keyword">await</span> connection.<span class="token-function">rollback</span>();
+  <span class="token-keyword">throw new</span> <span class="token-class">ConflictError</span>(<span class="token-string">'Seat already reserved'</span>);
+}
+<span class="token-keyword">await</span> connection.<span class="token-function">commit</span>();</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 3: WebSockets & Event-Driven -->
+            <div class="arch-pane" id="tab-websockets">
+              <div class="pane-grid">
+                <div class="pane-text">
+                  <h3>Full-Stack Real-Time & Event-Driven Systems</h3>
+                  <p>
+                    Distributed collaborative rooms and live feeds require clean separation between state synchronization, socket backpressure, and client security.
+                  </p>
+                  <ul class="principles-list">
+                    <li><strong>Room-Scoped Socket Namespaces:</strong> Segmenting Socket.io / WebSocket channels by document or room IDs to avoid broadcasting cross-talk.</li>
+                    <li><strong>Client-Side End-to-End Encryption:</strong> Encrypting sensitive data payloads (AES-256) before transmission to ensure absolute data privacy.</li>
+                    <li><strong>Exponential Backoff with Jitter:</strong> Preventing thundering-herd reconnect storms on server deployments or temporary network drops.</li>
+                  </ul>
+                </div>
+                <div class="code-preview-box">
+                  <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">socket-resilience.ts</span>
+                  </div>
+                  <pre><code><span class="token-keyword">class</span> <span class="token-class">ResilientSocket</span> {
+  <span class="token-keyword">private</span> reconnectAttempts = 0;
+  
+  <span class="token-keyword">private</span> <span class="token-function">reconnect</span>() {
+    <span class="token-comment">// Exponential backoff with random jitter</span>
+    <span class="token-keyword">const</span> baseDelay = Math.min(1000 * Math.pow(2, <span class="token-keyword">this</span>.reconnectAttempts), 15000);
+    <span class="token-keyword">const</span> jitter = Math.random() * 500;
+    
+    setTimeout(() => {
+      <span class="token-keyword">this</span>.reconnectAttempts++;
+      <span class="token-keyword">this</span>.<span class="token-function">connect</span>();
+    }, baseDelay + jitter);
+  }
+}</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 4: 16ms Frame Budget & Frontend -->
+            <div class="arch-pane" id="tab-frontend">
+              <div class="pane-grid">
+                <div class="pane-text">
+                  <h3>Sub-16ms Reactive Frontend & State Architecture</h3>
+                  <p>
+                    When live data streams or users interact with dense code editors, web interfaces must compute layout, paint, and composite in under 16.6 milliseconds (60 FPS) without stutter.
+                  </p>
+                  <ul class="principles-list">
+                    <li><strong>Avoid Layout Thrashing:</strong> Never interleave DOM mutations with geometric reads (e.g. <code>offsetHeight</code>); batch writes with <code>requestAnimationFrame</code>.</li>
+                    <li><strong>Zustand & Atomic Selectors:</strong> Components subscribe only to the exact slice of data they render, preventing expensive root re-renders.</li>
+                    <li><strong>Composite-Only GPU Animations:</strong> Confining animations to <code>transform</code> and <code>opacity</code> to offload work to dedicated hardware layers.</li>
+                  </ul>
+                </div>
+                <div class="code-preview-box">
+                  <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">batching-render.ts</span>
+                  </div>
+                  <pre><code><span class="token-comment">// Batching high-frequency data updates to screen refresh</span>
+<span class="token-keyword">let</span> pendingTick: DataTick | <span class="token-keyword">null</span> = <span class="token-keyword">null</span>;
+<span class="token-keyword">let</span> rafId: <span class="token-keyword">number</span> | <span class="token-keyword">null</span> = <span class="token-keyword">null</span>;
+
+<span class="token-keyword">function</span> <span class="token-function">onStreamUpdate</span>(tick: DataTick) {
+  pendingTick = tick; <span class="token-comment">// coalescing rapid incoming messages</span>
+  <span class="token-keyword">if</span> (!rafId) {
+    rafId = requestAnimationFrame(() => {
+      <span class="token-function">renderDataView</span>(pendingTick!);
+      rafId = <span class="token-keyword">null</span>;
+    });
+  }
+}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Competency Matrix</div>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">
+            Strong fundamentals across modern frontend frameworks, real-time protocols, system design, and algorithmic workflows.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">⚡</div>
+            <h3 class="category-title">Frontend Engineering</h3>
+            <p class="category-desc">Crafting pixel-perfect, accessible, and high-frequency user interfaces.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">React 19 / 18</span>
+              <span class="skill-badge highlight">JavaScript (ES6+)</span>
+              <span class="skill-badge highlight">TypeScript</span>
+              <span class="skill-badge">Next.js (SSR / ISR)</span>
+              <span class="skill-badge">HTML5 / Semantic UI</span>
+              <span class="skill-badge">Modern CSS / Vanilla</span>
+              <span class="skill-badge">Tailwind CSS</span>
+              <span class="skill-badge">Monaco Code Editor</span>
+              <span class="skill-badge">Framer Motion</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">📡</div>
+            <h3 class="category-title">Real-Time & Performance</h3>
+            <p class="category-desc">Engineering reactive feeds, sub-millisecond updates, and 120Hz smooth frames.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">WebSockets (Socket.io)</span>
+              <span class="skill-badge highlight">HTML5 Canvas API</span>
+              <span class="skill-badge highlight">requestAnimationFrame</span>
+              <span class="skill-badge">List Virtualization</span>
+              <span class="skill-badge">Web Workers</span>
+              <span class="skill-badge">Network Jitter Backoff</span>
+              <span class="skill-badge">DevTools Profiler</span>
+              <span class="skill-badge">Memory Leak Auditing</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">📊</div>
+            <h3 class="category-title">State & Data Visualization</h3>
+            <p class="category-desc">Transforming massive streaming datasets into clean, intuitive interactive dashboards.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">Zustand</span>
+              <span class="skill-badge highlight">Recharts / Chart.js</span>
+              <span class="skill-badge">Context API</span>
+              <span class="skill-badge">Data Normalization</span>
+              <span class="skill-badge">Axios & Fetch Abort</span>
+              <span class="skill-badge">Optimistic Updates</span>
+              <span class="skill-badge">D3 Concepts</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">🏗️</div>
+            <h3 class="category-title">Backend & System Design</h3>
+            <p class="category-desc">High-throughput backends, transactional integrity, and resilient caching layers.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">Node.js</span>
+              <span class="skill-badge highlight">Express.js</span>
+              <span class="skill-badge highlight">MySQL (ACID Locks)</span>
+              <span class="skill-badge highlight">Redis (Cache/Rate Limit)</span>
+              <span class="skill-badge">Message Queues (Kafka/RabbitMQ)</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">JWT & AES-256</span>
+              <span class="skill-badge">REST API Architecture</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 5 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">📈</div>
+            <h3 class="category-title">Quantitative & ML</h3>
+            <p class="category-desc">Statistical arbitrage modeling, financial datasets, and predictive algorithms.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">Python</span>
+              <span class="skill-badge highlight">TensorFlow / Keras</span>
+              <span class="skill-badge highlight">Johansen Cointegration</span>
+              <span class="skill-badge">ADF Stationarity</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">Random Forest</span>
+              <span class="skill-badge">Pandas / NumPy</span>
+              <span class="skill-badge">Streamlit</span>
+            </div>
+          </div>
+
+          <!-- Skill Category 6 -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-icon">🛠️</div>
+            <h3 class="category-title">Engineering Core & Tools</h3>
+            <p class="category-desc">Data structures, algorithm efficiency, version control, and automated pipelines.</p>
+            <div class="skill-pills">
+              <span class="skill-badge highlight">Data Structures & Algo</span>
+              <span class="skill-badge highlight">C++ / OOP</span>
+              <span class="skill-badge highlight">Git & GitHub Workflows</span>
+              <span class="skill-badge">GitHub Actions CI/CD</span>
+              <span class="skill-badge">Vite Build Tooling</span>
+              <span class="skill-badge">Linux / PowerShell</span>
+              <span class="skill-badge">Jest / Testing Principles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="milestones" class="timeline-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Education & Trajectory</div>
+          <h2 class="section-title">Background & Milestones</h2>
+          <p class="section-subtitle">
+            Solid computer science foundations, competitive problem solving, and end-to-end engineering execution.
+          </p>
+        </div>
+
+        <div class="timeline-tree">
+          <!-- Timeline Node 1: NIT -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date">2023 — 2027 (Expected)</div>
+              <h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+              <div class="timeline-org">National Institute of Technology (NIT)</div>
+              <p class="timeline-desc">
+                Focus on Data Structures, Algorithms, Low-Level Design, Operating Systems, Database Management Systems, and Computer Networks. Active competitive programmer and open-source software builder.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Algorithms</span>
+                <span class="tech-pill">DBMS</span>
+                <span class="tech-pill">OS</span>
+                <span class="tech-pill">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Node 2: IIT Jammu Research Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date">Research Internship</div>
+              <h3 class="timeline-title">Research Intern — Machine Learning & Systems</h3>
+              <div class="timeline-org">Indian Institute of Technology (IIT) Jammu</div>
+              <p class="timeline-desc">
+                Conducted research on machine learning models, statistical optimization, and data pipelines. Collaborated closely with academic researchers on algorithmic modeling, empirical validation, and performance evaluation.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Statistical Analysis</span>
+                <span class="tech-pill">Algorithm Design</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Empirical Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Node 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date">2025 — 2026</div>
+              <h3 class="timeline-title">Creator & Lead Architect • Codezy Platform</h3>
+              <div class="timeline-org">Production Full-Stack Application</div>
+              <p class="timeline-desc">
+                Designed and deployed a collaborative coding ecosystem with real-time Socket.io rooms, Monaco code editor, automated contest tracking, and AES-256 encrypted storage on Vercel.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Socket.io</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Node 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-date">2026</div>
+              <h3 class="timeline-title">Quantitative Trading Strategy & High-Throughput Engines</h3>
+              <div class="timeline-org">Research & Distributed Systems Projects</div>
+              <p class="timeline-desc">
+                Implemented statistical arbitrage pairs trading using Johansen cointegration and LSTM forecasting models. Built distributed flight reservation architecture solving race conditions with MySQL row-level locking and Redis.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-pill">Quantitative Modeling</span>
+                <span class="tech-pill">LSTM</span>
+                <span class="tech-pill">Distributed Caching</span>
+                <span class="tech-pill">Concurrency</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & GET IN TOUCH -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-wrapper glass-panel">
+          <div class="contact-left">
+            <div class="section-tag">Let's Connect</div>
+            <h2 class="contact-title">Ready to build something exceptional.</h2>
+            <p class="contact-desc">
+              Whether you are looking for an ambitious, high-ownership Frontend & Systems Engineer for your team, have an interesting technical problem to solve, or want to discuss real-time architecture, my inbox is always open.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="c-icon">✉️</div>
+                <div class="c-details">
+                  <span class="c-label">Email</span>
+                  <a href="mailto:10dsanchitbis.virdi@gmail.com" class="c-link" id="email-link">10dsanchitbis.virdi@gmail.com</a>
+                  <button class="copy-btn" id="copy-email-btn" title="Copy email address">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span id="copy-status">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="c-details">
+                  <span class="c-label">GitHub</span>
+                  <a href="https://github.com/sanchit037nit" target="_blank" rel="noopener noreferrer" class="c-link">github.com/sanchit037nit</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon">📍</div>
+                <div class="c-details">
+                  <span class="c-label">Location Preference</span>
+                  <span class="c-val">Open to Any Location (Onsite, Hybrid & Remote)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Quick Message Form -->
+          <div class="contact-right">
+            <form id="contact-form" class="contact-form">
+              <h3 class="form-title">Send a Direct Message</h3>
+              
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Chen" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Topic / Role</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Frontend Engineering Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Hello Sanchit, I was impressed by your real-time lab and architecture breakdown..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-block">
+                <span>Send Message via Mail client</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              <div id="form-feedback" class="form-feedback hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span>Sanchit Virdi</span>
+          <span class="logo-bracket">/&gt;</span>
+        </span>
+        <p class="footer-text">Built with vanilla CSS, modern HTML5, and zero heavy bundles. Engineered for speed.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#realtime-lab">Real-Time Lab</a>
+          <a href="https://github.com/sanchit037nit" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <p class="copyright">© 2026 Sanchit Virdi • Open Source MIT</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ARCHITECTURE BREAKDOWN MODAL -->
+  <div id="arch-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon" id="modal-icon">📦</span>
+          <div>
+            <h3 class="modal-title" id="modal-title">Project Architecture</h3>
+            <span class="modal-subtitle" id="modal-subtitle">Technical Breakdown</span>
+          </div>
+        </div>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-content">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CLI TERMINAL MODAL -->
+  <div id="cli-modal" class="cli-overlay hidden" role="dialog" aria-modal="true" aria-label="Interactive Developer Console">
+    <div class="cli-window glass-panel">
+      <div class="cli-header">
+        <div class="cli-window-dots">
+          <span class="dot dot-red" id="cli-close-dot"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="cli-title">sanchit@nit-terminal: ~ (Type 'help' for commands)</div>
+        <button id="cli-close-btn" class="cli-exit-btn" aria-label="Close terminal">&times;</button>
+      </div>
+
+      <div class="cli-body" id="cli-output">
+        <div class="cli-line banner">
+          <span class="cli-brand">SANCHIT VIRDI // CLI INTERACTIVE TERMINAL v2.4</span>
+        </div>
+        <div class="cli-line">Type <span class="cmd-highlight">'help'</span> to see available commands, or <span class="cmd-highlight">'projects'</span>, <span class="cmd-highlight">'skills'</span>, <span class="cmd-highlight">'hire'</span>.</div>
+      </div>
+
+      <div class="cli-input-bar">
+        <span class="cli-prompt">visitor@sanchit-virdi:~$</span>
+        <input type="text" id="cli-input" class="cli-input" autocomplete="off" spellcheck="false" placeholder="type a command...">
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK RESUME PREVIEW MODAL -->
+  <div id="resume-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Resume Overview">
+    <div class="modal-card resume-card glass-panel">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Sanchit Virdi — Technical Resume</h3>
+          <span class="modal-subtitle">B.Tech Computer Science & Engineering (Class of 2027) • NIT</span>
+        </div>
+        <div class="resume-actions">
+          <button id="print-resume-btn" class="btn btn-sm btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print / Save PDF
+          </button>
+          <button id="resume-close-btn" class="modal-close" aria-label="Close resume">&times;</button>
+        </div>
+      </div>
+
+      <div class="resume-modal-body" id="printable-resume">
+        <div class="resume-header-block">
+          <h2>SANCHIT VIRDI</h2>
+          <p class="resume-contact-line">
+            <span>Email: 10dsanchitbis.virdi@gmail.com</span> • 
+            <span>GitHub: github.com/sanchit037nit</span> • 
+            <span>Location: Open to Any Location (Onsite / Remote / Hybrid)</span>
+          </p>
+        </div>
+
+        <div class="resume-section-block">
+          <h4 class="resume-heading">EDUCATION</h4>
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>National Institute of Technology (NIT)</strong>
+              <span>2023 — 2027</span>
+            </div>
+            <p class="entry-sub">Bachelor of Technology in Computer Science & Engineering</p>
+            <p class="entry-detail">Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming (C++), Operating Systems, DBMS, Computer Networks, Software Engineering.</p>
+          </div>
+        </div>
+
+        <div class="resume-section-block">
+          <h4 class="resume-heading">RESEARCH EXPERIENCE</h4>
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>Indian Institute of Technology (IIT) Jammu</strong>
+              <span>Research Intern</span>
+            </div>
+            <p class="entry-sub">Department of Computer Science & Engineering</p>
+            <ul class="resume-bullets">
+              <li>Conducted research on machine learning models, empirical statistical evaluation, and data pipeline optimization under faculty guidance.</li>
+              <li>Engineered benchmark suites for algorithmic performance evaluation and data analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume-section-block">
+          <h4 class="resume-heading">TECHNICAL SKILLS</h4>
+          <p><strong>Languages:</strong> JavaScript (ES6+), TypeScript, C++, Python, HTML5, CSS3, SQL</p>
+          <p><strong>Frontend & Real-Time:</strong> React 19/18, Next.js, WebSockets (Socket.io), HTML5 Canvas, Zustand, Recharts, Chart.js, Monaco Code Editor, Framer Motion, Tailwind CSS</p>
+          <p><strong>Backend & Systems:</strong> Node.js, Express.js, MySQL (ACID Transactions, Row Locks), Redis (Caching & Rate Limiting), Message Queues, MongoDB, RESTful APIs, JWT, AES-256</p>
+          <p><strong>Quantitative & Tools:</strong> TensorFlow/Keras (LSTM), Johansen Cointegration, Scikit-learn, Git, GitHub Actions CI/CD, Vite, Linux</p>
+        </div>
+
+        <div class="resume-section-block">
+          <h4 class="resume-heading">FEATURED ENGINEERING PROJECTS</h4>
+          
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>Codezy — Collaborative Code Solution & Mentorship Platform</strong>
+              <span>React 19, Socket.io, Monaco, Node.js, MongoDB</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Architected a real-time developer platform deployed live on Vercel with multi-user collaborative code rooms using Socket.io.</li>
+              <li>Integrated in-browser Monaco code editor, AES-256 encrypted solution storage, and competitive programming contest trackers.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>ARO-LSTM Pairs Trading & Statistical Arbitrage Pipeline</strong>
+              <span>Python, TensorFlow, Cointegration (Johansen/ADF)</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Built a market-neutral quantitative trading strategy testing price series cointegration and ADF spread mean-reversion.</li>
+              <li>Trained an LSTM network to forecast next-day trading signal deviations and sized portfolio positions based on hedge ratios.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>High-Concurrency Distributed Flight Booking Engine</strong>
+              <span>Node.js, Express, MySQL, Redis, Message Queues</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Engineered a high-throughput reservation backend utilizing MySQL <code>SELECT FOR UPDATE</code> row-level transactions to eliminate seat overselling race conditions under simulated high concurrency.</li>
+              <li>Implemented sub-5ms Redis search cache invalidation and distributed token-bucket rate limiters.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>ScholarSync — Multi-Source Extraction & Deterministic Matcher</strong>
+              <span>Node.js, Express, Groq LPU, Web Scraping</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Designed a deterministic eligibility matching engine responding in &lt; 50ms, with 3-tier sub-millisecond SSR JSON deserialization.</li>
+              <li>Implemented circuit-breaker fallbacks and stemmed token deduplication with &ge; 75% Overlap Coefficient fusion.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <strong>UPI Real-Time Fraud Detection Platform</strong>
+              <span>Python, Scikit-learn, Random Forest, Streamlit</span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Trained a Random Forest classifier achieving 94.9% ROC-AUC on imbalanced payment data with sub-millisecond single transaction inference.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
